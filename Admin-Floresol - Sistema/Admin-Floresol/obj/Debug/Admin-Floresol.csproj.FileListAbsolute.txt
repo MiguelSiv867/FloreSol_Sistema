@@ -10,3 +10,8 @@ C:\Users\LG\Desktop\Atividades ETEC\Atividade_de_DS\Projeto\Admin-Floresol - Sis
 C:\Users\LG\Desktop\Atividades ETEC\Atividade_de_DS\Projeto\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.exe
 C:\Users\LG\Desktop\Atividades ETEC\Atividade_de_DS\Projeto\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.pdb
 C:\Users\LG\Desktop\Atividades ETEC\Atividade_de_DS\Projeto\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.exe.config
+C:\Users\lab1053\Desktop\Floresol\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.csproj.AssemblyReference.cache
+C:\Users\lab1053\Desktop\Floresol\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.exe.config
+C:\Users\lab1053\Desktop\Floresol\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.csproj.CoreCompileInputs.cache
+C:\Users\lab1053\Desktop\Floresol\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.exe
+C:\Users\lab1053\Desktop\Floresol\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.pdb
