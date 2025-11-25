@@ -101,7 +101,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::Floresol_ADM.Properties.Resources.logo_3;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(698, 129);
+            this.pictureBox1.Location = new System.Drawing.Point(653, 129);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(55);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(188, 175);
