@@ -1,0 +1,10 @@
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\bin\Debug\Floresol-ADM.exe.config
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\bin\Debug\Floresol-ADM.exe
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\bin\Debug\Floresol-ADM.pdb
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\obj\Debug\Floresol-ADM.csproj.AssemblyReference.cache
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\obj\Debug\Floresol_ADM.Form1.resources
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\obj\Debug\Floresol_ADM.Properties.Resources.resources
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\obj\Debug\Floresol-ADM.csproj.GenerateResource.cache
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\obj\Debug\Floresol-ADM.csproj.CoreCompileInputs.cache
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\obj\Debug\Floresol-ADM.exe
+C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Floresol-ADM\obj\Debug\Floresol-ADM.pdb

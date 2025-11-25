@@ -26,7 +26,7 @@ namespace Admin_Floresol
                         Console.WriteLine("Usuário: ");
                         Console.ReadLine();
                         Console.WriteLine("Senha: ");
-                        Console.
+                       
                         break;
                     case "2":
                         break;
