@@ -50,22 +50,22 @@
             this.Cadastrar.BackgroundImage = global::Floresol_ADM.Properties.Resources.fundo_2;
             this.Cadastrar.ForeColor = System.Drawing.Color.White;
             this.Cadastrar.ImageKey = "(nenhum/a)";
-            this.Cadastrar.Location = new System.Drawing.Point(313, 318);
+            this.Cadastrar.Location = new System.Drawing.Point(313, 301);
             this.Cadastrar.Name = "Cadastrar";
-            this.Cadastrar.Size = new System.Drawing.Size(181, 29);
+            this.Cadastrar.Size = new System.Drawing.Size(188, 29);
             this.Cadastrar.TabIndex = 1;
-            this.Cadastrar.Text = "Cadastrar";
+            this.Cadastrar.Text = "Cadastro funcionário";
             this.Cadastrar.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             this.button1.BackgroundImage = global::Floresol_ADM.Properties.Resources.logo;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(313, 266);
+            this.button1.Location = new System.Drawing.Point(313, 257);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(181, 30);
+            this.button1.Size = new System.Drawing.Size(188, 28);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Entrada ";
+            this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -81,7 +81,7 @@
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.DarkGray;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

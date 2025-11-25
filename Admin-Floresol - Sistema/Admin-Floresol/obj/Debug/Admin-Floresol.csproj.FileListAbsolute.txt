@@ -20,3 +20,6 @@ C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Flore
 C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.csproj.CoreCompileInputs.cache
 C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.exe
 C:\Users\miguel\Desktop\po\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.pdb
+C:\Users\lab1056\Desktop\floresol\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.csproj.AssemblyReference.cache
+C:\Users\lab1056\Desktop\floresol\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.exe.config
+C:\Users\lab1056\Desktop\floresol\FloreSol_Sistema\Admin-Floresol - Sistema\Admin-Floresol\obj\Debug\Admin-Floresol.csproj.CoreCompileInputs.cache
