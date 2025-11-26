@@ -36,5 +36,12 @@ namespace Floresol_ADM
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form4 novaPagina = new Form4();
+            novaPagina.Show();
+            this.Hide();
+        }
     }
 }

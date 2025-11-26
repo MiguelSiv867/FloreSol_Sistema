@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LG\\Desktop\\Atividades ETEC\\Atividade_de_DS\\Projeto\\DLLs\\Senhas\\",
+  "WorkspaceRootPath": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\DLLs\\Senhas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FC8A316-8A69-41E2-9A5C-F6759F26B2CC}|Senhas\\Senhas.csproj|c:\\users\\lg\\desktop\\atividades etec\\atividade_de_ds\\projeto\\dlls\\senhas\\senhas\\senhaadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8FC8A316-8A69-41E2-9A5C-F6759F26B2CC}|Senhas\\Senhas.csproj|c:\\users\\miguel\\desktop\\floresol_sistema\\dlls\\senhas\\senhas\\senhaadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FC8A316-8A69-41E2-9A5C-F6759F26B2CC}|Senhas\\Senhas.csproj|solutionrelative:senhas\\senhaadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SenhaAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\LG\\Desktop\\Atividades ETEC\\Atividade_de_DS\\Projeto\\DLLs\\Senhas\\Senhas\\SenhaAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\DLLs\\Senhas\\Senhas\\SenhaAdmin.cs",
               "RelativeDocumentMoniker": "Senhas\\SenhaAdmin.cs",
-              "ToolTip": "C:\\Users\\LG\\Desktop\\Atividades ETEC\\Atividade_de_DS\\Projeto\\DLLs\\Senhas\\Senhas\\SenhaAdmin.cs",
+              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\DLLs\\Senhas\\Senhas\\SenhaAdmin.cs",
               "RelativeToolTip": "Senhas\\SenhaAdmin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
