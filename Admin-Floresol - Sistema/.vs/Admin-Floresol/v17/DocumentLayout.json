@@ -9,22 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,20 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form5.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form5.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs [Design]",
-              "RelativeToolTip": "Floresol-ADM\\Form5.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T00:52:00.625Z",
-              "IsPinned": true
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -56,7 +28,7 @@
               "RelativeDocumentMoniker": "Floresol-ADM\\Form3.cs",
               "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs",
               "RelativeToolTip": "Floresol-ADM\\Form3.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAhwFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAADwv4gAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T21:48:42.303Z",
               "EditorCaption": ""
@@ -72,41 +44,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T21:47:21.71Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form2.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs",
-              "RelativeToolTip": "Floresol-ADM\\Form2.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAwFcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T21:41:59.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form2.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs [Design]",
-              "RelativeToolTip": "Floresol-ADM\\Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T21:41:53.557Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form5.cs",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form5.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs",
-              "RelativeToolTip": "Floresol-ADM\\Form5.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T00:53:08.454Z"
             }
           ]
         }

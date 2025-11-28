@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -79,6 +80,30 @@ namespace Floresol_ADM
 
         }
 
+        //querry
+        public void DiarioLucro()
+        {
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
+
+                string query = "SELECT SUM(valor) FROM Pedido  WHERE DATE(data_transacao) = CURDATE(); ";
+                   
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0 && dt.Rows[0][0] != DBNull.Value)
+                    label7.Text = dt.Rows[0][0].ToString();
+                else
+                    label7.Text = "0";
+
+            }
+        }
+        //querry
+
+
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -87,6 +112,53 @@ namespace Floresol_ADM
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+        //querry
+        public void DiarioVenda()
+        {
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
+
+                string query = "SELECT COUNT(*) " +
+                               "FROM Pedido " +
+                               "WHERE DATE(data_transacao) = CURDATE();";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                    label9.Text = dt.Rows[0][0].ToString();
+                else
+                    label9.Text = "0";
+            }
+        }
+        //querry
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            DiarioLucro();
+            DiarioVenda();
         }
     }
 }
