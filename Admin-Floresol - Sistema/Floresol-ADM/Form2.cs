@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,5 +69,33 @@ namespace Floresol_ADM
             novaPagina.Show();
             this.Hide();
         }
+
+        private void estoque_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            CarregarDados();
+        }
+
+        //querry
+        public void CarregarDados()
+        {
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
+
+                string query = "select nome_produto,tipo_produto,quantidade_produto,preco_produto from produto;";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                estoque.DataSource = dt;
+            }
+        }
+        //querry
     }
 }

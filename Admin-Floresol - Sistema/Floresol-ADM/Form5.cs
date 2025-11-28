@@ -35,7 +35,7 @@ namespace Floresol_ADM
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                dataGridView1.DataSource = dt;
+                funcionario.DataSource = dt;
             }
         }
         //querry

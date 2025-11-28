@@ -137,6 +137,7 @@
             this.estoque.ReadOnly = true;
             this.estoque.Size = new System.Drawing.Size(761, 330);
             this.estoque.TabIndex = 8;
+            this.estoque.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.estoque_CellContentClick);
             // 
             // button2
             // 
@@ -166,6 +167,7 @@
             this.Controls.Add(this.label3);
             this.Name = "Form2";
             this.Text = "Sistema de administação floresol";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.estoque)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
