@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Login = new System.Windows.Forms.Label();
-            this.Senha = new System.Windows.Forms.Label();
-            this.Nome = new System.Windows.Forms.Label();
-            this.textPsw = new System.Windows.Forms.TextBox();
-            this.textName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Entrar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,53 +52,51 @@
             this.Login.Size = new System.Drawing.Size(70, 29);
             this.Login.TabIndex = 3;
             this.Login.Text = "Login";
-            this.Login.Visible = false;
             // 
-            // Senha
+            // label2
             // 
-            this.Senha.AutoSize = true;
-            this.Senha.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.Senha.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Senha.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Senha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Senha.Location = new System.Drawing.Point(73, 231);
-            this.Senha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Senha.Name = "Senha";
-            this.Senha.Size = new System.Drawing.Size(106, 18);
-            this.Senha.TabIndex = 10;
-            this.Senha.Text = "Senha do usuário";
-            this.Senha.Click += new System.EventHandler(this.label2_Click);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(73, 231);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 18);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Senha do usuário";
             // 
-            // Nome
+            // label1
             // 
-            this.Nome.AutoSize = true;
-            this.Nome.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.Nome.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Nome.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nome.Location = new System.Drawing.Point(73, 129);
-            this.Nome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Nome.Name = "Nome";
-            this.Nome.Size = new System.Drawing.Size(101, 18);
-            this.Nome.TabIndex = 9;
-            this.Nome.Text = "None de usuário";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(73, 129);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 18);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "None de usuário";
             // 
-            // textPsw
+            // textBox3
             // 
-            this.textPsw.Location = new System.Drawing.Point(73, 253);
-            this.textPsw.Margin = new System.Windows.Forms.Padding(4);
-            this.textPsw.Name = "textPsw";
-            this.textPsw.Size = new System.Drawing.Size(361, 20);
-            this.textPsw.TabIndex = 8;
+            this.textBox3.Location = new System.Drawing.Point(73, 253);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(361, 20);
+            this.textBox3.TabIndex = 8;
+            this.textBox3.UseSystemPasswordChar = true;
             // 
-            // textName
+            // textBox2
             // 
-            this.textName.Location = new System.Drawing.Point(73, 151);
-            this.textName.Margin = new System.Windows.Forms.Padding(4);
-            this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(361, 20);
-            this.textName.TabIndex = 7;
-            this.textName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Location = new System.Drawing.Point(73, 151);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(361, 20);
+            this.textBox2.TabIndex = 7;
             // 
             // pictureBox1
             // 
@@ -112,17 +110,15 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Entrar
+            // button1
             // 
-            this.Entrar.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.Entrar.ForeColor = System.Drawing.Color.White;
-            this.Entrar.Location = new System.Drawing.Point(215, 329);
-            this.Entrar.Name = "Entrar";
-            this.Entrar.Size = new System.Drawing.Size(75, 23);
-            this.Entrar.TabIndex = 11;
-            this.Entrar.Text = "Entrar";
-            this.Entrar.UseVisualStyleBackColor = false;
-            this.Entrar.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Location = new System.Drawing.Point(215, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Entrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -130,11 +126,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(994, 495);
-            this.Controls.Add(this.Entrar);
-            this.Controls.Add(this.Senha);
-            this.Controls.Add(this.Nome);
-            this.Controls.Add(this.textPsw);
-            this.Controls.Add(this.textName);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.DarkGray;
@@ -151,12 +147,12 @@
 
         #endregion
         private System.Windows.Forms.Label Login;
-        private System.Windows.Forms.Label Senha;
-        private System.Windows.Forms.Label Nome;
-        private System.Windows.Forms.TextBox textPsw;
-        private System.Windows.Forms.TextBox textName;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button Entrar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 
