@@ -44,6 +44,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.vendas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -233,12 +234,23 @@
             this.label16.TabIndex = 31;
             this.label16.Text = "Lucros e vendas";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(839, 441);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 21);
+            this.button3.TabIndex = 32;
+            this.button3.Text = "atualizar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(926, 503);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -282,5 +294,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button button3;
     }
 }

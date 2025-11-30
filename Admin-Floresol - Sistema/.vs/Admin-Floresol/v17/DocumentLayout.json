@@ -1,46 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\",
+  "WorkspaceRootPath": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|c:\\users\\miguel\\desktop\\ai\\floresol_sistema\\admin-floresol - sistema\\floresol-adm\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|c:\\users\\miguel\\desktop\\floresol_sistema\\admin-floresol - sistema\\floresol-adm\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|c:\\users\\miguel\\desktop\\floresol_sistema\\admin-floresol - sistema\\floresol-adm\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|c:\\users\\miguel\\desktop\\floresol_sistema\\admin-floresol - sistema\\floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|c:\\users\\miguel\\desktop\\floresol_sistema\\admin-floresol - sistema\\floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,118 +44,88 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form3.cs",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs",
+              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs",
               "RelativeDocumentMoniker": "Floresol-ADM\\Form3.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs",
+              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs",
               "RelativeToolTip": "Floresol-ADM\\Form3.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAUwHUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAABUBAAAAAAAAAIAwwC0BAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:02:43.217Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-11-30T18:32:14.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "database.cs",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\database.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\database.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\database.cs",
-              "RelativeToolTip": "Floresol-ADM\\database.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs",
+              "RelativeDocumentMoniker": "Floresol-ADM\\Form3.cs",
+              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs [Design]",
+              "RelativeToolTip": "Floresol-ADM\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T19:30:52.877Z"
+              "WhenOpened": "2025-11-30T18:31:52.123Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form4.cs",
+              "RelativeDocumentMoniker": "Floresol-ADM\\Form4.cs",
+              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form4.cs",
+              "RelativeToolTip": "Floresol-ADM\\Form4.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAnwCQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T18:31:37.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs",
+              "RelativeDocumentMoniker": "Floresol-ADM\\Form2.cs",
+              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs [Design]",
+              "RelativeToolTip": "Floresol-ADM\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T18:01:29.746Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form5.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs",
+              "RelativeDocumentMoniker": "Floresol-ADM\\Form5.cs",
+              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs [Design]",
+              "RelativeToolTip": "Floresol-ADM\\Form5.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T18:28:52.967Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs",
+              "RelativeDocumentMoniker": "Floresol-ADM\\Form2.cs",
+              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs",
+              "RelativeToolTip": "Floresol-ADM\\Form2.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAAAKQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T19:21:44.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form4.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form4.cs",
+              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form4.cs",
               "RelativeDocumentMoniker": "Floresol-ADM\\Form4.cs",
               "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form4.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form4.cs [Design]",
+              "RelativeToolTip": "Floresol-ADM\\Form4.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:28:51.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form3.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form3.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:02:08.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form2.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:01:29.746Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form1.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form1.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form1.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T19:20:05.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form5.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form5.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:28:52.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form2.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form2.cs",
-              "RelativeToolTip": "Floresol-ADM\\Form2.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAnwBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T19:21:44.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form4.cs",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form4.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form4.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form4.cs",
-              "RelativeToolTip": "Floresol-ADM\\Form4.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAnwCQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T19:23:00.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form5.cs",
-              "DocumentMoniker": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs",
-              "RelativeDocumentMoniker": "Floresol-ADM\\Form5.cs",
-              "ToolTip": "C:\\Users\\miguel\\Desktop\\ai\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs",
-              "RelativeToolTip": "Floresol-ADM\\Form5.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAnwCsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T19:20:43.231Z"
+              "WhenOpened": "2025-11-29T18:28:51.636Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

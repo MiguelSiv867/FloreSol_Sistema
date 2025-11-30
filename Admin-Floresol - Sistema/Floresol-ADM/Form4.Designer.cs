@@ -52,20 +52,20 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(150, 75);
+            this.button1.Location = new System.Drawing.Point(133, 75);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 71);
+            this.button1.Size = new System.Drawing.Size(200, 71);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Estoque";
+            this.button1.Text = "Estoque e Delivery";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(150, 152);
+            this.button2.Location = new System.Drawing.Point(133, 152);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 74);
+            this.button2.Size = new System.Drawing.Size(200, 74);
             this.button2.TabIndex = 12;
             this.button2.Text = "Lucro e vendas";
             this.button2.UseVisualStyleBackColor = true;
@@ -84,9 +84,9 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(150, 232);
+            this.button4.Location = new System.Drawing.Point(133, 232);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 78);
+            this.button4.Size = new System.Drawing.Size(200, 78);
             this.button4.TabIndex = 14;
             this.button4.Text = "Funcionarios";
             this.button4.UseVisualStyleBackColor = true;

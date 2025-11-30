@@ -272,6 +272,24 @@ INSERT INTO Pedido_has_Produto (id_pedido, id_produto, quantidade) VALUES
 (1, 2, 1),
 (1, 4, 1);
 
+INSERT INTO Endereco (cep, rua, numero, bairro, cidade, sgestado)
+VALUES
+('13000000', 'Rua das Flores', '100', 'Centro', 'Campinas', 'SP'),
+('14000000', 'Av. Brasil', '200', 'Jardim Paulista', 'Ribeirão Preto', 'SP'),
+('15000000', 'Rua Primavera', '50', 'Vila Nova', 'São José do Rio Preto', 'SP'),
+('16000000', 'Av. das Rosas', '300', 'Jardim Europa', 'Sorocaba', 'SP');
+
+
+INSERT INTO Cliente_has_Endereco (id_cliente, id_endereco)
+VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4);
+
+
+
+
 select*from Pedido;
  select*from fornecedor;
  select*from Funcionario;
@@ -292,4 +310,28 @@ FROM Pedido p
 JOIN Cliente c ON p.id_cliente = c.id_cliente
 JOIN Pedido_has_Produto php ON p.id_pedido = php.id_pedido
 JOIN Produto pr ON php.id_produto = pr.id_produto
+ORDER BY p.id_pedido;
+
+
+
+
+SELECT 
+    p.id_pedido,
+    c.nome_cliente,
+    pr.nome_produto,
+    php.quantidade,
+    e.rua,
+    e.numero,
+    e.bairro,
+    e.cidade,
+    e.sgestado,
+    d.codrastreio_delivery AS codigo_rastreio,
+    d.StTransporte_delivery AS status_entrega
+FROM Pedido p
+JOIN Cliente c ON p.id_cliente = c.id_cliente
+JOIN Pedido_has_Produto php ON p.id_pedido = php.id_pedido
+JOIN Produto pr ON php.id_produto = pr.id_produto
+JOIN Delivery d ON p.id_delivery = d.id_delivery
+JOIN Cliente_has_Endereco ce ON c.id_cliente = ce.id_cliente
+JOIN Endereco e ON ce.id_endereco = e.id_endereco
 ORDER BY p.id_pedido;
