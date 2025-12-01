@@ -39,10 +39,12 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 18.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(447, 36);
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "Opçõe de transações e estoque ";
