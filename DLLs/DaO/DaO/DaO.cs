@@ -27,7 +27,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = "select nome_produto,tipo_produto,quantidade_produto,preco_produto from produto;";
+                string query = "select (nome_produto,tipo_produto,quantidade_produto,preco_produto) from produto;";
 
                 MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
                 DataTable dt = new DataTable();
@@ -89,7 +89,35 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = "SELECT    p.id_pedido,   c.nome_cliente,    pr.nome_produto,   php.quantidade,    e.rua,   e.numero,  e.bairro,    e.cidade,   e.sgestado,   d.codrastreio_delivery AS codigo_rastreio,   d.StTransporte_delivery AS status_entrega FROM Pedido p JOIN Cliente c ON p.id_cliente = c.id_cliente JOIN Pedido_has_Produto php ON p.id_pedido = php.id_pedido JOIN Produto pr ON php.id_produto = pr.id_produto JOIN Delivery d ON p.id_delivery = d.id_delivery JOIN Cliente_has_Endereco ce ON c.id_cliente = ce.id_cliente JOIN Endereco e ON ce.id_endereco = e.id_endereco ORDER BY p.id_pedido; ";
+                string query = @"
+            SELECT
+                P.id_pedido,
+                C.nome_cliente,
+                Pr.nome_produto,
+                PHP.quantidade,
+                E.rua,
+                E.numero,
+                E.bairro,
+                E.cidade,
+                E.sgestado,
+                D.codrastreio_delivery AS codigo_rastreio,
+                D.StTransporte_delivery AS status_entrega
+            FROM
+                Pedido AS P
+            INNER JOIN
+                Cliente AS C ON P.id_cliente = C.id_cliente
+            INNER JOIN
+                Delivery AS D ON P.id_delivery = D.id_delivery
+            INNER JOIN
+                Pedido_has_Produto AS PHP ON P.id_pedido = PHP.id_pedido
+            INNER JOIN
+                Produto AS Pr ON PHP.id_produto = Pr.id_produto
+            INNER JOIN
+                Cliente_has_Endereco AS CHE ON C.id_cliente = CHE.id_cliente
+            INNER JOIN
+                Endereco AS E ON CHE.id_endereco = E.id_endereco
+            ORDER BY
+                P.id_pedido;"
                 MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -231,11 +259,7 @@ namespace DaO
                 conecta.Open();
 
                 string query = @"
-            SELECT COUNT(*)
-            FROM Pedido
-            WHERE MONTH(data_transacao) = MONTH(CURDATE())
-            AND YEAR(data_transacao) = YEAR(CURDATE());
-        ";
+            SELECT COUNT(*) FROM Pedido WHERE MONTH(data_transacao) = MONTH(CURDATE()) AND YEAR(data_transacao) = YEAR(CURDATE());";
 
                 MySqlCommand cmd = new MySqlCommand(query, conecta);
 
