@@ -7,6 +7,8 @@ packages/
 
 # Ignorar a pasta oculta de configuração do Visual Studio (VS 2017+)
 **/.vs/
+.vs
+.vs/
 
 # Ignorar arquivos de usuário/configuração
 *.suo
