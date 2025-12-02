@@ -46,6 +46,7 @@
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Location = new System.Drawing.Point(835, 464);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);

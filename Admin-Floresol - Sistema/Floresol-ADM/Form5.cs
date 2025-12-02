@@ -19,26 +19,16 @@ namespace Floresol_ADM
         }
         private void Form5_Load(object sender, EventArgs e)
         {
-            //referencia a querry na tablea
-            CarregarDados();
+
+            CarregarDados3();
         }
-        //querry
-        public void CarregarDados()
+
+        public void CarregarDados3()
         {
-            using (MySqlConnection conecta = Database.Conecta())
-            {
-                conecta.Open();
-
-                string query = "SELECT * FROM Funcionario"; 
-
-                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                funcionario.DataSource = dt;
-            }
+            funcionario.DataSource = DaO.DaO.CarregarDados3();
         }
-        //querry
+
+
         private void button2_Click(object sender, EventArgs e)
         {
             Form4 novaPagina = new Form4();

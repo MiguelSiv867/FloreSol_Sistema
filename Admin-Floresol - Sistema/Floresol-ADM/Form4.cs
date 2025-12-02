@@ -29,7 +29,9 @@ namespace Floresol_ADM
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            Form1 login = new Form1();
+            login.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
