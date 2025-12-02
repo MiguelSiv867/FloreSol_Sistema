@@ -10,11 +10,11 @@
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|c:\\users\\pichau\\desktop\\trabalhos\\projeto m\u00F3dulo 2\\floresol_sistema\\admin-floresol - sistema\\floresol-adm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\Pichau\\Desktop\\Trabalhos\\Projeto M\u00F3dulo 2\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|c:\\users\\pichau\\desktop\\trabalhos\\projeto m\u00F3dulo 2\\floresol_sistema\\admin-floresol - sistema\\floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|C:\\Users\\Pichau\\Desktop\\Trabalhos\\Projeto M\u00F3dulo 2\\FloreSol_Sistema\\Admin-Floresol - Sistema\\floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11F5C8F1-D75D-4C4C-B038-A195520ECA16}|Floresol-ADM\\Floresol-ADM.csproj|solutionrelative:floresol-adm\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -62,8 +62,7 @@
               "RelativeToolTip": "Floresol-ADM\\Form4.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAswCEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T01:48:42.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T01:48:42.455Z"
             },
             {
               "$type": "Document",
@@ -99,8 +98,7 @@
               "ToolTip": "C:\\Users\\Pichau\\Desktop\\Trabalhos\\Projeto M\u00F3dulo 2\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form3.cs [Design]",
               "RelativeToolTip": "Floresol-ADM\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T17:56:42.677Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-01T17:56:42.677Z"
             },
             {
               "$type": "Document",
@@ -111,8 +109,7 @@
               "ToolTip": "C:\\Users\\Pichau\\Desktop\\Trabalhos\\Projeto M\u00F3dulo 2\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form5.cs [Design]",
               "RelativeToolTip": "Floresol-ADM\\Form5.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T17:56:17.76Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-01T17:56:17.76Z"
             },
             {
               "$type": "Document",
@@ -123,8 +120,7 @@
               "ToolTip": "C:\\Users\\Pichau\\Desktop\\Trabalhos\\Projeto M\u00F3dulo 2\\FloreSol_Sistema\\Admin-Floresol - Sistema\\Floresol-ADM\\Form4.cs [Design]",
               "RelativeToolTip": "Floresol-ADM\\Form4.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T18:28:51.636Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-29T18:28:51.636Z"
             }
           ]
         }
