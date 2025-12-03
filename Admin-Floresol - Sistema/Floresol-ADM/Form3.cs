@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DaO;
 
 namespace Floresol_ADM
 {
@@ -58,11 +57,36 @@ namespace Floresol_ADM
         {
 
         }
-        public void CarregarDados2()
-        {
-            vendas.DataSource = DaO.DaO.CarregarDados2();
-        }
 
+        //querry
+        public void CarregarDados()
+        {
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
+
+                string query = "SELECT p.id_pedido, " +
+                    "c.nome_cliente, " +
+                    "pr.nome_produto," +
+                    "php.quantidade, " +
+                    "pr.preco_produto, " +
+                    "(php.quantidade * pr.preco_produto) AS total_item, " +
+                    "p.valor AS total_pedido," +
+                    " p.data_transacao " +
+                    "FROM Pedido p " +
+                    "JOIN Cliente c ON p.id_cliente = c.id_cliente " +
+                    "JOIN Pedido_has_Produto php ON p.id_pedido = php.id_pedido " +
+                    "JOIN Produto pr ON php.id_produto = pr.id_produto " +
+                    "ORDER BY p.id_pedido; ";
+
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                vendas.DataSource = dt;
+            }
+        }
         //querry
         private void label3_Click(object sender, EventArgs e)
         {
@@ -89,23 +113,68 @@ namespace Floresol_ADM
         //querry
         public void DiarioLucro()
         {
-            decimal lucro = DaO.DaO.ObterLucroDiario();
-            label7.Text = lucro.ToString("0.00");
-        }
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
 
+                string query = "SELECT SUM(valor) FROM Pedido  WHERE DATE(data_transacao) = CURDATE(); ";
+                   
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0 && dt.Rows[0][0] != DBNull.Value)
+                    label7.Text = dt.Rows[0][0].ToString();
+                else
+                    label7.Text = "0";
+
+            }
+        }
         //querry
         public void SemanalLucro()
         {
-            decimal lucro = DaO.DaO.ObterLucroSemanal();
-            label12.Text = lucro.ToString("0.00");
-        }
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
 
+                string query = "SELECT SUM(valor) FROM Pedido  WHERE YEARWEEK(data_transacao, 1) = YEARWEEK(CURDATE(), 1); ";
+
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0 && dt.Rows[0][0] != DBNull.Value)
+                    label12.Text = dt.Rows[0][0].ToString();
+                else
+                    label12.Text = "0";
+
+            }
+        }
 
         public void MensalLucro()
         {
-            decimal lucro = DaO.DaO.ObterLucroMensal();
-            label14.Text = lucro.ToString("0.00");
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
+
+                string query = "SELECT SUM(valor) FROM Pedido  WHERE MONTH(data_transacao) = MONTH(CURDATE())  AND YEAR(data_transacao) = YEAR(CURDATE()); ";
+
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0 && dt.Rows[0][0] != DBNull.Value)
+                    label14.Text = dt.Rows[0][0].ToString();
+                else
+                    label14.Text = "0";
+
+            }
         }
+
+
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -120,9 +189,71 @@ namespace Floresol_ADM
         {
 
         }
+        
+        public void DiarioVenda()
+        {
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
 
-        private readonly DaO.DaO dao = new DaO.DaO();
+                string query = "SELECT COUNT(*) " +
+                               "FROM Pedido " +
+                               "WHERE DATE(data_transacao) = CURDATE();";
 
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                    label9.Text = dt.Rows[0][0].ToString();
+                else
+                    label9.Text = "0";
+            }
+        }
+
+        public void SemanalVenda()
+        {
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
+
+                string query = "SELECT COUNT(*) " +
+                    "FROM Pedido " +
+                    "WHERE YEARWEEK(data_transacao, 1) = YEARWEEK(CURDATE(), 1); ";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                    label13.Text = dt.Rows[0][0].ToString();
+                else
+                    label13.Text = "0";
+            }
+
+        }
+
+        public void MensalVenda()
+        {
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
+
+                string query = "SELECT COUNT(*) " +
+                    "FROM Pedido " +
+                    "WHERE MONTH(data_transacao) = MONTH(CURDATE())  AND YEAR(data_transacao) = YEAR(CURDATE()); ";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                    label15.Text = dt.Rows[0][0].ToString();
+                else
+                    label15.Text = "0";
+            }
+
+        }
 
         private void label14_Click(object sender, EventArgs e)
         {
@@ -142,14 +273,12 @@ namespace Floresol_ADM
         private void Form3_Load(object sender, EventArgs e)
         {
             DiarioLucro();
+            DiarioVenda();
+            SemanalVenda();
             SemanalLucro();
+            MensalVenda();
             MensalLucro();
-
-            label9.Text = dao.VendasDiarias().ToString();
-            label13.Text = dao.VendasSemana().ToString();
-            label15.Text = dao.VendasMes().ToString();
-
-            CarregarDados2();
+            CarregarDados();
         }
 
         private void label12_Click(object sender, EventArgs e)
@@ -165,14 +294,12 @@ namespace Floresol_ADM
         private void button3_Click(object sender, EventArgs e)
         {
             DiarioLucro();
+            DiarioVenda();
+            SemanalVenda();
             SemanalLucro();
+            MensalVenda();
             MensalLucro();
-
-            label9.Text = dao.VendasDiarias().ToString();
-            label13.Text = dao.VendasSemana().ToString();
-            label15.Text = dao.VendasMes().ToString();
-
-            CarregarDados2();
+            CarregarDados();
         }
     }
 }

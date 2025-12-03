@@ -76,7 +76,6 @@
             // 
             // button2
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Location = new System.Drawing.Point(839, 468);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -239,7 +238,6 @@
             // 
             // button3
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Location = new System.Drawing.Point(839, 441);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 21);

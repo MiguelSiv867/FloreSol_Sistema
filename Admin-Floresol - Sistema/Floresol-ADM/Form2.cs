@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DaO;
 
 namespace Floresol_ADM
 {
@@ -78,9 +77,45 @@ namespace Floresol_ADM
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            estoque.DataSource = DaO.DaO. CarregarDados1();
-            delivery.DataSource = DaO.DaO.Delivery();
+            CarregarDados();
+            Delivery();
         }
+
+        
+        public void CarregarDados()
+        {
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
+
+                string query = "select nome_produto,tipo_produto,quantidade_produto,preco_produto from produto;";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                estoque.DataSource = dt;
+            }
+        }
+
+        public void Delivery()
+        {
+            using (MySqlConnection conecta = Database.Conecta())
+            {
+                conecta.Open();
+
+                string query = "SELECT    p.id_pedido,   c.nome_cliente,    pr.nome_produto,   php.quantidade,    e.rua,   e.numero,  e.bairro,    e.cidade,   e.sgestado,   d.codrastreio_delivery AS codigo_rastreio,   d.StTransporte_delivery AS status_entrega FROM Pedido p JOIN Cliente c ON p.id_cliente = c.id_cliente JOIN Pedido_has_Produto php ON p.id_pedido = php.id_pedido JOIN Produto pr ON php.id_produto = pr.id_produto JOIN Delivery d ON p.id_delivery = d.id_delivery JOIN Cliente_has_Endereco ce ON c.id_cliente = ce.id_cliente JOIN Endereco e ON ce.id_endereco = e.id_endereco ORDER BY p.id_pedido; ";
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                delivery.DataSource = dt;
+            }
+        }
+
+
+
+
         private void delivery_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -88,33 +123,34 @@ namespace Floresol_ADM
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (!int.TryParse(IDP.Text, out int idPedido))
+        
+            using (MySqlConnection conecta = Database.Conecta())
             {
-                MessageBox.Show("ID do pedido inválido.");
-                return;
-            }
+                conecta.Open();
 
-            string codigo = CR.Text.Trim();
-            if (codigo == "")
-            {
-                MessageBox.Show("Digite o código de rastreio.");
-                return;
-            }
+                string query = @"
+            UPDATE Delivery d
+            JOIN Pedido p ON d.id_delivery = p.id_delivery
+            SET d.codrastreio_delivery = @codigo
+            WHERE p.id_pedido = @idPedido";
 
-            try
-            {
-                int linhas = DaO.DaO.AtuCodRastreio(idPedido, codigo);
+                using (MySqlCommand cmd = new MySqlCommand(query, conecta))
+                {
+                    
+                    cmd.Parameters.AddWithValue("@codigo", CR.Text.Trim());
 
-                if (linhas > 0)
-                    MessageBox.Show("Código de rastreio atualizado!");
-                else
-                    MessageBox.Show("Nenhum registro foi atualizado. Verifique o ID do pedido.");
-            }
-            catch (MySql.Data.MySqlClient.MySqlException ex) when (ex.Number == 1062)
-            {
-                MessageBox.Show("O código de rastreio informado já existe. Insira outro.", "Erro de duplicidade", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+                    
+                    cmd.Parameters.AddWithValue("@idPedido", int.Parse(IDP.Text));
 
+                    int linhas = cmd.ExecuteNonQuery();
+
+                    if (linhas > 0)
+                        MessageBox.Show("Código de rastreio atualizado!");
+                    else
+                        MessageBox.Show("Nenhum registro foi atualizado.\nVerifique o ID do pedido.");
+                }
+            }
+        
 
         }
 
@@ -125,8 +161,8 @@ namespace Floresol_ADM
 
         private void button3_Click(object sender, EventArgs e)
         {
-            estoque.DataSource = DaO.DaO.CarregarDados1();
-            delivery.DataSource = DaO.DaO.Delivery();
+            CarregarDados();
+            Delivery();
         }
     }
 }

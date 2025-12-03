@@ -1,0 +1,29 @@
+# Build directories
+bin/
+obj/
+
+# Visual Studio
+.vs/
+**/.vs/
+
+*.suo
+*.user
+*.useros
+*.userprefs
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# Logs e temporários
+*.tmp
+*.log
+*.cache
+
+# VSCode
+.vscode/
+
+# Diretórios de IDE
+*.db
+*.opendb

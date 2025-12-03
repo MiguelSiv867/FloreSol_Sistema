@@ -35,8 +35,8 @@
             this.textSenha = new System.Windows.Forms.TextBox();
             this.textUsuario = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Entrar = new System.Windows.Forms.Button();
-            this.chkMostrarSenha = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,9 +78,9 @@
             this.label1.Location = new System.Drawing.Point(73, 129);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 18);
+            this.label1.Size = new System.Drawing.Size(105, 18);
             this.label1.TabIndex = 9;
-            this.label1.Text = "None de usuário";
+            this.label1.Text = "Nome de usuário";
             // 
             // textSenha
             // 
@@ -98,6 +98,7 @@
             this.textUsuario.Name = "textUsuario";
             this.textUsuario.Size = new System.Drawing.Size(361, 20);
             this.textUsuario.TabIndex = 7;
+            this.textUsuario.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // pictureBox1
             // 
@@ -111,33 +112,26 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Entrar
+            // button1
             // 
-            this.Entrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Entrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Entrar.ForeColor = System.Drawing.Color.White;
-            this.Entrar.Location = new System.Drawing.Point(215, 329);
-            this.Entrar.Name = "Entrar";
-            this.Entrar.Size = new System.Drawing.Size(75, 23);
-            this.Entrar.TabIndex = 11;
-            this.Entrar.Text = "Entrar";
-            this.Entrar.UseVisualStyleBackColor = true;
-            this.Entrar.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Location = new System.Drawing.Point(215, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Entrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // chkMostrarSenha
+            // checkBox1
             // 
-            this.chkMostrarSenha.AutoSize = true;
-            this.chkMostrarSenha.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkMostrarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chkMostrarSenha.ForeColor = System.Drawing.Color.White;
-            this.chkMostrarSenha.Location = new System.Drawing.Point(353, 231);
-            this.chkMostrarSenha.Name = "chkMostrarSenha";
-            this.chkMostrarSenha.Size = new System.Drawing.Size(58, 17);
-            this.chkMostrarSenha.TabIndex = 12;
-            this.chkMostrarSenha.Text = "Mostrar";
-            this.chkMostrarSenha.UseVisualStyleBackColor = true;
-            this.chkMostrarSenha.CheckedChanged += new System.EventHandler(this.chkMostrarSenha_CheckedChanged);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(354, 229);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(61, 17);
+            this.checkBox1.TabIndex = 12;
+            this.checkBox1.Text = "Mostrar";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // Form1
             // 
@@ -145,8 +139,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(994, 495);
-            this.Controls.Add(this.chkMostrarSenha);
-            this.Controls.Add(this.Entrar);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textSenha);
@@ -171,9 +165,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button Entrar;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textSenha;
-        private System.Windows.Forms.CheckBox chkMostrarSenha;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
