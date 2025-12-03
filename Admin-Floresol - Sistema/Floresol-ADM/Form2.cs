@@ -88,7 +88,6 @@ namespace Floresol_ADM
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
             if (!int.TryParse(IDP.Text, out int idPedido))
             {
                 MessageBox.Show("ID do pedido inválido.");
@@ -102,12 +101,19 @@ namespace Floresol_ADM
                 return;
             }
 
-            int linhas = DaO.DaO.AtuCodRastreio(idPedido, codigo);
+            try
+            {
+                int linhas = DaO.DaO.AtuCodRastreio(idPedido, codigo);
 
-            if (linhas > 0)
-                MessageBox.Show("Código de rastreio atualizado!");
-            else
-                MessageBox.Show("Nenhum registro foi atualizado.\nVerifique o ID do pedido.");
+                if (linhas > 0)
+                    MessageBox.Show("Código de rastreio atualizado!");
+                else
+                    MessageBox.Show("Nenhum registro foi atualizado. Verifique o ID do pedido.");
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex) when (ex.Number == 1062)
+            {
+                MessageBox.Show("O código de rastreio informado já existe. Insira outro.", "Erro de duplicidade", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
 
         }

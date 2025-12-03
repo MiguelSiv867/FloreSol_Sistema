@@ -27,7 +27,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = "select (nome_produto,tipo_produto,quantidade_produto,preco_produto) from produto;";
+                string query = "SELECT nome_produto, tipo_produto, quantidade_produto, preco_produto FROM Produto;";
 
                 MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
                 DataTable dt = new DataTable();
@@ -89,35 +89,26 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = @"
-            SELECT
-                P.id_pedido,
-                C.nome_cliente,
-                Pr.nome_produto,
-                PHP.quantidade,
-                E.rua,
-                E.numero,
-                E.bairro,
-                E.cidade,
-                E.sgestado,
-                D.codrastreio_delivery AS codigo_rastreio,
-                D.StTransporte_delivery AS status_entrega
-            FROM
-                Pedido AS P
-            INNER JOIN
-                Cliente AS C ON P.id_cliente = C.id_cliente
-            INNER JOIN
-                Delivery AS D ON P.id_delivery = D.id_delivery
-            INNER JOIN
-                Pedido_has_Produto AS PHP ON P.id_pedido = PHP.id_pedido
-            INNER JOIN
-                Produto AS Pr ON PHP.id_produto = Pr.id_produto
-            INNER JOIN
-                Cliente_has_Endereco AS CHE ON C.id_cliente = CHE.id_cliente
-            INNER JOIN
-                Endereco AS E ON CHE.id_endereco = E.id_endereco
-            ORDER BY
-                P.id_pedido;"
+                string query = @"SELECT P.id_pedido, " +
+                                "C.nome_cliente, " +
+                                "Pr.nome_produto, " +
+                                "PHP.quantidade, " +
+                                "E.rua, " +
+                                "E.numero, " +
+                                "E.bairro, " +
+                                "E.cidade, " +
+                                "E.sgestado, " +
+                                "D.codrastreio_delivery AS codigo_rastreio, " +
+                                "D.StTransporte_delivery AS status_entrega " +
+                                "FROM Pedido AS P " +
+                                "INNER JOIN Cliente AS C ON P.id_cliente = C.id_cliente " + 
+                                "INNER JOIN Delivery AS D ON P.id_delivery = D.id_delivery " + 
+                                "INNER JOIN Pedido_has_Produto AS PHP ON P.id_pedido = PHP.id_pedido " +
+                                "INNER JOIN Produto AS Pr ON PHP.id_produto = Pr.id_produto " +
+                                "INNER JOIN Cliente_has_Endereco AS CHE ON C.id_cliente = CHE.id_cliente " +
+                                "INNER JOIN Endereco AS E ON CHE.id_endereco = E.id_endereco " +
+                                "ORDER BY P.id_pedido;";
+
                 MySqlDataAdapter da = new MySqlDataAdapter(query, conecta);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -132,11 +123,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = @"
-            UPDATE Delivery d
-            JOIN Pedido p ON d.id_delivery = p.id_delivery
-            SET d.codrastreio_delivery = @codigo
-            WHERE p.id_pedido = @idPedido";
+                string query = @" UPDATE Delivery d JOIN Pedido p ON d.id_delivery = p.id_delivery SET d.codrastreio_delivery = @codigo WHERE p.id_pedido = @idPedido";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conecta))
                 {
@@ -154,9 +141,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = @"SELECT SUM(valor) 
-                         FROM Pedido  
-                         WHERE DATE(data_transacao) = CURDATE();";
+                string query = @"SELECT SUM(valor) FROM Pedido WHERE DATE(data_transacao) = CURDATE();";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conecta))
                 {
@@ -176,9 +161,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = @"SELECT SUM(valor) 
-                         FROM Pedido  
-                         WHERE YEARWEEK(data_transacao, 1) = YEARWEEK(CURDATE(), 1);";
+                string query = @"SELECT SUM(valor) FROM Pedido WHERE YEARWEEK(data_transacao, 1) = YEARWEEK(CURDATE(), 1);";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conecta))
                 {
@@ -198,10 +181,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = @"SELECT SUM(valor) 
-                         FROM Pedido  
-                         WHERE MONTH(data_transacao) = MONTH(CURDATE())  
-                         AND YEAR(data_transacao) = YEAR(CURDATE());";
+                string query = @"SELECT SUM(valor) FROM Pedido WHERE MONTH(data_transacao) = MONTH(CURDATE()) AND YEAR(data_transacao) = YEAR(CURDATE());";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conecta))
                 {
@@ -220,11 +200,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = @"
-            SELECT COUNT(*)
-            FROM Pedido
-            WHERE DATE(data_transacao) = CURDATE();
-        ";
+                string query = @"SELECT COUNT(*) FROM Pedido WHERE DATE(data_transacao) = CURDATE();";
 
                 MySqlCommand cmd = new MySqlCommand(query, conecta);
 
@@ -239,11 +215,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = @"
-            SELECT COUNT(*)
-            FROM Pedido
-            WHERE YEARWEEK(data_transacao, 1) = YEARWEEK(CURDATE(), 1);
-        ";
+                string query = @"SELECT COUNT(*) FROM Pedido WHERE YEARWEEK(data_transacao, 1) = YEARWEEK(CURDATE(), 1);";
 
                 MySqlCommand cmd = new MySqlCommand(query, conecta);
 
@@ -258,8 +230,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = @"
-            SELECT COUNT(*) FROM Pedido WHERE MONTH(data_transacao) = MONTH(CURDATE()) AND YEAR(data_transacao) = YEAR(CURDATE());";
+                string query = @"SELECT COUNT(*) FROM Pedido WHERE MONTH(data_transacao) = MONTH(CURDATE()) AND YEAR(data_transacao) = YEAR(CURDATE());";
 
                 MySqlCommand cmd = new MySqlCommand(query, conecta);
 
@@ -274,11 +245,7 @@ namespace DaO
             {
                 conecta.Open();
 
-                string query = @"
-                SELECT COUNT(*) 
-                FROM LoginFunc 
-                WHERE Usuario_Fun = @usuario AND Senha_Fun = @senha;
-            ";
+                string query = @"SELECT COUNT(*) FROM LoginFunc WHERE Usuario_Fun = @usuario AND Senha_Fun = @senha;";
 
                 MySqlCommand cmd = new MySqlCommand(query, conecta);
                 cmd.Parameters.AddWithValue("@usuario", usuario);

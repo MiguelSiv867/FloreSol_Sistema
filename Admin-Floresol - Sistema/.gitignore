@@ -2,6 +2,15 @@
 [Bb]in/
 [Oo]bj/
 
+# Ignorar tudo dentro de bin e obj
+**/bin/*
+**/obj/*
+
+# Mas permitir algumas DLLs específicas (ex: DaO.dll)
+!**/bin/Debug/DaO.dll
+!**/bin/Debug/DaO.pdb
+
+
 # Ignorar pastas de pacotes NuGet
 packages/
 
@@ -15,3 +24,6 @@ packages/
 *.user
 *.useros
 *.userprefs
+**/*.user
+**/*.suo
+**/*.userprefs

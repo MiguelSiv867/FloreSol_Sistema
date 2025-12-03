@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS bank_adm;
 USE bank_adm;
 
-CREATE TABLE Cliente (
+CREATE TABLE if not exists Cliente (
     id_cliente INT PRIMARY KEY AUTO_INCREMENT,
     nome_cliente VARCHAR(100) NOT NULL,
     email_cliente VARCHAR(60) UNIQUE,
@@ -10,33 +10,33 @@ CREATE TABLE Cliente (
     datanas_cliente DATE NOT NULL
 ) ;
 
-CREATE TABLE Loja (
+CREATE TABLE if not exists Loja (
     id_loja INT PRIMARY KEY AUTO_INCREMENT,
     cnpj_loja CHAR(14) NOT NULL UNIQUE,
     email_loja VARCHAR(100),
     nome VARCHAR(60) NOT NULL
 ) ;
 
-CREATE TABLE FormaPagamento (
+CREATE TABLE if not exists FormaPagamento (
     id_formapagamento INT PRIMARY KEY AUTO_INCREMENT,
     tipo VARCHAR(18) NOT NULL,
     parcela INT
 ) ;
 
-CREATE TABLE Delivery (
+CREATE TABLE if not exists Delivery (
     id_delivery INT PRIMARY KEY AUTO_INCREMENT,
     frete_delivery DECIMAL(10,2) NOT NULL,
     codrastreio_delivery BIGINT NOT NULL UNIQUE,
     StTransporte_delivery VARCHAR(15)
 ) ;
 
-CREATE TABLE Fornecedor (
+CREATE TABLE if not exists Fornecedor (
     id_fornecedor INT PRIMARY KEY AUTO_INCREMENT,
     nome_fornecedor VARCHAR(70) NOT NULL,
     cnpj_fornecedor CHAR(14) UNIQUE,
     site VARCHAR(100)
 ) ;
-CREATE TABLE Endereco (
+CREATE TABLE if not exists Endereco (
     id_endereco INT PRIMARY KEY AUTO_INCREMENT,
     cep CHAR(8),
     rua VARCHAR(40) NOT NULL,
@@ -46,12 +46,12 @@ CREATE TABLE Endereco (
     sgestado CHAR(2)
 ) ;
 
-CREATE TABLE Telefone (
+CREATE TABLE if not exists Telefone (
     id_telefone INT PRIMARY KEY AUTO_INCREMENT,
     numero VARCHAR(20) NOT NULL  
 ) ;
 
-CREATE TABLE Funcionario (
+CREATE TABLE if not exists Funcionario (
     id_funcionario INT PRIMARY KEY AUTO_INCREMENT,
     nome_funcionario VARCHAR(150) NOT NULL,
     idade_funcionario INT NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE Funcionario (
     FOREIGN KEY (id_loja) REFERENCES Loja(id_loja) 
 ) ;
 
-CREATE TABLE Produto (
+CREATE TABLE if not exists Produto (
     id_produto INT PRIMARY KEY AUTO_INCREMENT,
     tipo_produto VARCHAR(40) NOT NULL,
     nome_produto VARCHAR(80) NOT NULL,
@@ -79,7 +79,7 @@ CREATE TABLE Produto (
     id_fornecedor INT,
     FOREIGN KEY (id_fornecedor) REFERENCES Fornecedor(id_fornecedor) 
 ) ;
-CREATE TABLE LoginFunc(
+CREATE TABLE if not exists LoginFunc(
 id_loginFunc int primary key auto_increment,
 id_funcionario int unique,
 Usuario_Fun varchar(100) not null unique,
@@ -87,7 +87,7 @@ Senha_Fun varchar(50) not null,
 FOREIGN KEY (id_funcionario) REFERENCES Funcionario(id_funcionario) 
 );
 
-CREATE TABLE LoginCli(
+CREATE TABLE if not exists LoginCli(
 id_logincli int primary key auto_increment,
 id_cliente int unique,
 Usuário_Cli varchar(100) not null unique,
@@ -95,7 +95,7 @@ Senha_Cli varchar(50) not null,
 FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
 );
 
-CREATE TABLE Pedido (
+CREATE TABLE if not exists Pedido (
     id_pedido INT PRIMARY KEY AUTO_INCREMENT,
     valor DECIMAL(10,2) NOT NULL,
     data_transacao datetime NOT NULL,
@@ -112,7 +112,7 @@ CREATE TABLE Pedido (
 ) ;
 
 
-CREATE TABLE Cliente_has_Endereco (
+CREATE TABLE if not exists Cliente_has_Endereco (
     id_cliente INT,
     id_endereco INT,
     PRIMARY KEY (id_cliente, id_endereco),
@@ -120,7 +120,7 @@ CREATE TABLE Cliente_has_Endereco (
     FOREIGN KEY (id_endereco) REFERENCES Endereco(id_endereco) 
 ) ;
 
-CREATE TABLE Loja_has_Endereco (
+CREATE TABLE if not exists Loja_has_Endereco (
     id_loja INT,
     id_endereco INT,
     PRIMARY KEY (id_loja, id_endereco),
@@ -128,7 +128,7 @@ CREATE TABLE Loja_has_Endereco (
     FOREIGN KEY (id_endereco) REFERENCES Endereco(id_endereco) 
 ) ;
 
-CREATE TABLE Endereco_has_Funcionarios (
+CREATE TABLE if not exists Endereco_has_Funcionarios (
     id_endereco INT,
     id_funcionario INT,
     PRIMARY KEY (id_endereco, id_funcionario),
@@ -136,7 +136,7 @@ CREATE TABLE Endereco_has_Funcionarios (
     FOREIGN KEY (id_funcionario) REFERENCES Funcionario(id_funcionario)
 ) ;
 
-CREATE TABLE Endereco_has_Fornecedor (
+CREATE TABLE if not exists Endereco_has_Fornecedor (
     id_endereco INT,
     id_fornecedor INT,
     PRIMARY KEY (id_endereco, id_fornecedor),
@@ -144,7 +144,7 @@ CREATE TABLE Endereco_has_Fornecedor (
     FOREIGN KEY (id_fornecedor) REFERENCES Fornecedor(id_fornecedor) 
 ) ;
 
-CREATE TABLE Telefone_has_Cliente (
+CREATE TABLE if not exists Telefone_has_Cliente (
     id_telefone INT,
     id_cliente INT,
     PRIMARY KEY (id_telefone, id_cliente),
@@ -152,7 +152,7 @@ CREATE TABLE Telefone_has_Cliente (
     FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente) 
 ) ;
 
-CREATE TABLE Telefone_has_Funcionarios (
+CREATE TABLE if not exists Telefone_has_Funcionarios (
     id_telefone INT,
     id_funcionario INT,
     PRIMARY KEY (id_telefone, id_funcionario),
@@ -160,7 +160,7 @@ CREATE TABLE Telefone_has_Funcionarios (
     FOREIGN KEY (id_funcionario) REFERENCES Funcionario(id_funcionario) 
 ) ;
 
-CREATE TABLE Telefone_has_Fornecedor (
+CREATE TABLE if not exists Telefone_has_Fornecedor (
     id_telefone INT,
     id_fornecedor INT,
     PRIMARY KEY (id_telefone, id_fornecedor),
@@ -168,7 +168,7 @@ CREATE TABLE Telefone_has_Fornecedor (
     FOREIGN KEY (id_fornecedor) REFERENCES Fornecedor(id_fornecedor) 
 ) ;
 
-CREATE TABLE Pedido_has_Produto (
+CREATE TABLE if not exists Pedido_has_Produto (
     id_pedido INT,
     id_produto INT,
     quantidade INT NOT NULL,
@@ -180,14 +180,11 @@ insert into Fornecedor (nome_fornecedor,site) values
 ('Holambelo Gran Flora','https://www.holambelo.com/pt/product/index/index/WPA_ID/7/'),
 ('feiradeflores','https://feiradeflores.com.br/' );
 
-
 INSERT INTO Telefone (numero)
 VALUES ('19992828650');
 SET @idTel = LAST_INSERT_ID();
 INSERT INTO Telefone_has_Fornecedor (id_telefone, id_fornecedor)
 VALUES (@idTel, 1);
-
-
 
 INSERT INTO Loja (cnpj_loja, email_loja, nome)
 VALUES ('12345678000199', 'aliahcristina2017@gmail.com', 'Floricultura Floresol');
@@ -229,14 +226,6 @@ INSERT INTO FormaPagamento (tipo, parcela) VALUES
 ('Débito', 1),
 ('Crédito', 2),
 ('Pix', NULL);
-select*from FormaPagamento;
-
-INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES
-(12.90, 987654321001, 'Postado'),
-(9.50, 987654321002, 'Rota'),
-(15.00, 987654321003, 'Entregue'),
-(11.20, 987654321004, 'Rota'),
-(10.00, 987654321005, 'Entregue');
  
  INSERT INTO Cliente (nome_cliente, email_cliente, cpf_cliente, idade_cliente, datanas_cliente) VALUES
 ('Cliente 1', 'c1@gmail.com', '11122233344', 30, '1995-01-01'),
@@ -244,31 +233,58 @@ INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_deliver
 ('Cliente 3', 'c3@gmail.com', '33344455566', 28, '1996-03-20'),
 ('Cliente 4', 'c4@gmail.com', '44455566677', 22, '2002-07-15');
 
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (12.90, 987654321001, 'Postado');
+set @idDelivery = LAST_INSERT_ID();
 INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
-VALUES
-(45.00, NOW(), NOW(), 1, 1, 1, 1),
-(30.00,  NOW(), NOW(), 2, 1, 2, 2),
-(60.00,  NOW(), NOW(), 3, 1, 3, 3),
-(15.00,  NOW(), NOW(), 1, 1, 1, 1),
-(75.00,  NOW(), NOW(), 4, 1, 2, 4),
-(90.00,  NOW(), NOW(), 2, 1, 2, 5),
-(15.00,  NOW(), NOW(), 3, 1, 3, 1),
-(45.00,  NOW(), NOW(), 1, 1, 1, 3),
-(30.00,  NOW(), NOW(), 4, 1, 3, 2),
-(105.00, NOW(), NOW(), 3, 1, 2, 4);
+VALUES (45.00, NOW(), NOW(), 1, 1, 1, @idDelivery);
 
-select * from Pedido;
-select * from cliente;
- select*from fornecedor;
- select*from Funcionario;
- select nome_produto,tipo_produto,quantidade_produto,preco_produto from produto;
- SELECT SUM(valor) FROM Pedido WHERE DATE(data_transacao) = CURDATE(); 
- 
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (9.50, 987654321002, 'Rota');
+set @idDelivery = LAST_INSERT_ID();
+INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
+VALUES (30.00,  NOW(), NOW(), 2, 1, 2, @idDelivery);
+
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (15.00, 987654321003, 'Entregue');
+set @idDelivery = LAST_INSERT_ID();
+INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
+VALUES (60.00,  NOW(), NOW(), 3, 1, 3, @idDelivery);
+
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (11.20, 987654321004, 'Rota');
+set @idDelivery = LAST_INSERT_ID();
+INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
+VALUES (15.00,  NOW(), NOW(), 1, 1, 1, @idDelivery);
+
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (10.00, 987654321005, 'Entregue');
+set @idDelivery = LAST_INSERT_ID();
+INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
+VALUES (75.00,  NOW(), NOW(), 4, 1, 2, @idDelivery);
+
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (14.70, 987654321006, 'Postado');
+set @idDelivery = LAST_INSERT_ID();
+INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
+VALUES (90.00,  NOW(), NOW(), 2, 1, 2, @idDelivery);
+
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (19.00, 987654321007, 'Rota');
+set @idDelivery = LAST_INSERT_ID();
+INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
+VALUES (15.00,  NOW(), NOW(), 3, 1, 3, @idDelivery);
+
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (10.00, 987654321008, 'Entregue');
+set @idDelivery = LAST_INSERT_ID();
+INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
+VALUES (45.00,  NOW(), NOW(), 1, 1, 1, @idDelivery);
+
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (23.47, 987654321009, 'Rota');
+set @idDelivery = LAST_INSERT_ID();
+INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
+VALUES (30.00,  NOW(), NOW(), 4, 1, 3, @idDelivery);
+
+INSERT INTO Delivery (frete_delivery, codrastreio_delivery, StTransporte_delivery) VALUES (11.20, 987654321010, 'Entregue');
+set @idDelivery = LAST_INSERT_ID();
+INSERT INTO Pedido (valor, data_transacao, hora_transacao, id_cliente, id_loja, id_formapagamento, id_delivery)
+VALUES (105.00, NOW(), NOW(), 3, 1, 2, @idDelivery);
+
  alter table Pedido auto_increment = 0;
- 
- select * from Funcionario;
- 
- select * from LoginFunc;
+
  insert into LoginFunc (id_funcionario, Usuario_Fun, Senha_Fun) values
  ( 1 , "Alana Barbosa", "07042008"),
  ( 2 , "Aliah Cristina", "28102007"),
@@ -282,3 +298,34 @@ select * from cliente;
  ('Desenvolvedores', 
  17, '33311100999', '23.456.789-6', '2008-01-29',
  'Desenvolve.Jeff01@Gmail.com', 'Coders', 'm', 9447.24, 1);
+
+INSERT INTO Pedido_has_Produto (id_pedido, id_produto, quantidade)
+VALUES
+(81, 5, 3),
+(82, 3, 2),
+(83, 6, 4),
+(84, 4, 1),
+(85, 2, 5),
+(86 , 3, 6),
+(87, 6, 1),
+(88, 1, 3),
+(89, 2, 2),
+(90, 3, 7);
+
+INSERT INTO Endereco (cep, rua, numero, bairro, cidade, sgestado)
+VALUES 
+('0991340', 'Rua Epicéia', '123', 'Vila Santa Teresinha', 'Diadema', 'SP'),
+('09940060', 'Rua Egito', '456', 'Taboão', 'Diadema', 'SP'),
+('09980150', 'Rua José Bonifácio', '789', 'Serraria', 'Diadema', 'SP'),
+('04476350', 'Rua Tatu', '101', 'Eldorado', 'Diadema', 'SP');
+
+SET @end = LAST_INSERT_ID();
+
+INSERT INTO Cliente_has_Endereco (id_cliente, id_endereco) VALUES 
+(1, 4),
+(2, 2),
+(3, 1),
+(4, 3);
+
+ALTER TABLE pedido ADD UNIQUE (id_delivery);
+

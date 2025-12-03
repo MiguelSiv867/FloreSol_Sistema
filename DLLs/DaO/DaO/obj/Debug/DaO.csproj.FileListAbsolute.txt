@@ -1,9 +1,0 @@
-C:\Users\Pichau\source\repos\DaO\DaO\bin\Debug\DaO.dll
-C:\Users\Pichau\source\repos\DaO\DaO\bin\Debug\DaO.pdb
-C:\Users\Pichau\source\repos\DaO\DaO\bin\Debug\MySql.Data.dll
-C:\Users\Pichau\source\repos\DaO\DaO\bin\Debug\MySql.Data.xml
-C:\Users\Pichau\source\repos\DaO\DaO\obj\Debug\DaO.csproj.AssemblyReference.cache
-C:\Users\Pichau\source\repos\DaO\DaO\obj\Debug\DaO.csproj.CoreCompileInputs.cache
-C:\Users\Pichau\source\repos\DaO\DaO\obj\Debug\DaO.csproj.Up2Date
-C:\Users\Pichau\source\repos\DaO\DaO\obj\Debug\DaO.dll
-C:\Users\Pichau\source\repos\DaO\DaO\obj\Debug\DaO.pdb
